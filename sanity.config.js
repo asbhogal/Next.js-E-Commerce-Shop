@@ -3,12 +3,15 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
+const projectId = process.env.SANITY_PROJECT_ID;
+const dataset = process.env.SANITY_DATASET;
+
 export default defineConfig({
-  name: 'default',
+  name: 'Elevé_Couture',
   title: 'Elevé Couture E-Commerce Store',
 
-  projectId: '19owmog7',
-  dataset: 'production',
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool()],
 
