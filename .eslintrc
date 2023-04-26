@@ -3,6 +3,10 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
   },
-  "extends": "@sanity/eslint-config-studio"
+  "extends": [
+    "next/core-web-vitals",
+    "@sanity/eslint-config-studio",
+    "plugin:@next/next/recommended"
+  ]
 }
   
